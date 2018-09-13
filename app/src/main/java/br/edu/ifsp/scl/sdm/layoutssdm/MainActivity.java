@@ -128,15 +128,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void adicionarEmail(View botao) {
-        this.criarViewTelefone();
+        this.criarViewEmail();
     }
 
     private View criarViewEmail() {
         LayoutInflater layoutInflater = getLayoutInflater();
 
-        View novoEmailLayout = layoutInflater.inflate(R.layout.novo_telefone_layout, null);
-        telefoneArrayList.add(novoEmailLayout);
-        telefoneLinearLayout.addView(novoEmailLayout);
+        View novoEmailLayout = layoutInflater.inflate(R.layout.novo_email_layout, null);
+        emailArrayList.add(novoEmailLayout);
+        emailLinearLayout.addView(novoEmailLayout);
         return novoEmailLayout;
     }
 
